@@ -1,0 +1,115 @@
+body {
+    background-color: whitesmoke;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    color: black;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.margin {
+    margin: 10px;
+    padding: 40px 130px;
+    border: 1px solid black;
+    max-width: 800px;
+}
+.margin1 {
+    margin: 10px;
+    padding: 40px 70px;
+    border: 1px solid black;
+    max-width: 800px;
+}
+.container {
+    width: 100%;
+    padding: 30px 100px;
+    margin: 10px;
+    border: 1px solid black;
+}
+input {
+    height: 2rem;
+    margin: 10px 0px;
+}
+textarea {
+    height: 6rem;
+    margin: 10px 0px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 5.7rem;
+    margin: 0;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 0;
+}
+h3 {
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 1.2rem;
+    margin: 0;
+}
+h4 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+.hover:hover {
+    color: #7d0086;
+}
+.btn {
+    font-family: "Mulish", sans-serif;
+    font-size: small;
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 10px 5px 5px 0px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+ }
+ .btn:hover {
+    background: #7d0086;
+    color: white;
+ }
+ .btn1:hover {
+    background: #7d0086;
+    color: white;
+ }
+ .btn1 {
+    font-family: "Mulish", sans-serif;
+    font-size: small;
+    background: black;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+ }
+.btnFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+

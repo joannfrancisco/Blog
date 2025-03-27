@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= post.title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: whitesmoke;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            color: black;
+            font-family: "Mulish", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+            font-size: 5.7rem;
+            margin: 0;
+        }
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+            font-size: 2rem;
+            margin: 0;
+        }
+        h3 {
+            font-weight: 300;
+            letter-spacing: 6px;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        h4 {
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            transition: all 0.3s ease;
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .margin1 {
+            margin: 10px;
+            padding: 40px 70px;
+            border: 1px solid black;
+            max-width: 800px;
+        }
+        .container {
+            width: 100%;
+            padding: 30px 100px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        .hover:hover {
+            font-size: 1.2rem;
+        }
+        .btn1 {
+            font-family: "Mulish", sans-serif;
+            font-size: small;
+            background: black;
+            color: white;
+            border: none;
+            padding: 15px 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .btn1:hover {
+            background: #7d0086;
+            color: white;
+        }
+        input {
+            height: 2rem;
+            margin: 10px 0px;
+        }
+        textarea {
+            height: 6rem;
+            margin: 10px 0px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body class="center">
+    <header class="container center">
+        <h3>EVERYTHING IS PERSONAL, INCLUDING THIS BLOG.</h3>
+        <h1>Train of Thought</h1>
+    </header>
+    
+    <main class="container">
+        <div class="margin1">
+            <h4>Edit Blog</h4>
+            <form action="/blogs/<%= post.id %>/update" method="POST">
+                <label>Title:</label>
+                <input type="text" name="title" value="<%= post.title %>" required>
+                <label>Content:</label>
+                <textarea name="content" required><%= post.content %></textarea>
+                <button class="btn1" type="submit">Update</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container center">
+        <h3>© 2025 | Jo Ann Francisco</h3>
+    </footer>
+
+</body>
+</html>

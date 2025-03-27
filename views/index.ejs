@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+    <% posts.forEach(post => { %>
+        <div class="margin">
+            <h2>
+                <a class="hover" href="/blogs/<%= post.id %>"><%= post.title %></a>
+            </h2>
+            <p><%= post.content.substring(0, 100) %>...</p>
+            <div class="btnFlex">
+                <a class="btn" href="/blogs/<%= post.id %>/edit">Edit</a>
+                <form action="/blogs/<%= post.id %>/delete" method="POST">
+                    <button class="btn" type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    <% }); %>
+
+    <a class="center margin hover" href="/new">Create New Blog</a>
+</main>
+
+<footer class="container center">
+    <h3>© 2025 | Jo Ann Francisco</h3>
+</footer>
+
+</body>
+</html>
